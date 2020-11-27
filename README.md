@@ -2,8 +2,6 @@
 
 Docker implementation of Templater Server. 
 
-We rolled our own since release builds of the templater-server.jar file have not been consistently maintained.
-
 https://templater.info/
 
 https://github.com/ngs-doo/TemplaterExamples/tree/master/Advanced/TemplaterServer

@@ -2,4 +2,4 @@
 
 #docker pull debian:stable
 docker build -t isaudits/templater-server .
-docker image prune -f
+#docker image prune -f
