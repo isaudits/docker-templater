@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y openjdk-11-jre-headless libreoffice-com
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV TEMPLATER_VERSION=4.0.0
+ENV TEMPLATER_VERSION=6.0.0
 
 WORKDIR /tmp
 RUN apt-get update && apt-get install -y maven && \
@@ -28,6 +28,6 @@ EXPOSE 7777
 
 WORKDIR /opt/templater
 
-ENTRYPOINT ["java", "-jar", "templater-server.jar", "-disable-exit"]
+ENTRYPOINT ["java", "-jar", "templater-server.jar", "-libreoffice=/usr/share/libreoffice", "-disable-exit"]
 
 
