@@ -25,6 +25,6 @@ EXPOSE 7777
 
 WORKDIR /opt/templater
 
-ENTRYPOINT ["java", "-jar", "templater-server.jar", "-libreoffice=/usr/share/libreoffice", "-disable-exit"]
+ENTRYPOINT ["java", "-jar", "templater-server.jar", "-libreoffice=/usr/share/libreoffice", "-disable-exit", "-address=0.0.0.0"]
 
 
