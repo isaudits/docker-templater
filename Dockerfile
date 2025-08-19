@@ -1,6 +1,6 @@
 FROM debian:stable
 
-RUN apt-get update && apt-get install -y openjdk-17-jre-headless libreoffice-common libreoffice-java-common libreoffice-writer libreoffice-calc wget && \
+RUN apt-get update && apt-get install -y openjdk-25-jre-headless libreoffice-common libreoffice-java-common libreoffice-writer libreoffice-calc wget && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
