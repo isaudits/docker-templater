@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y openjdk-25-jre-headless libreoffice-com
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV TEMPLATER_VERSION=7.1.0
+ENV TEMPLATER_VERSION=8.0.0
 
 WORKDIR /tmp
 
